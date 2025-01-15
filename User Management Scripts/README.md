@@ -67,12 +67,12 @@ This script disables, deletes, and/or archives user accounts. It requires superu
 
 `sudo ./delete_user.sh -dra john_doe`
 
-### Prerequisites
+## Prerequisites:
 
 - Linux operating system.
 - Superuser (root) privileges to execute the scripts.
 
-### Notes
+## Notes:
 
 - Make sure the scripts are executable. Use the following command if needed:
 
