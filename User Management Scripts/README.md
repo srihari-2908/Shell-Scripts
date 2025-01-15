@@ -15,11 +15,11 @@ This script creates a new user on the local system. It requires superuser privil
 - Forces the user to change the password on their first login.
 - Displays the username, password, and hostname.
 
-Usage:
+### Usage:
 
 `sudo ./user_creation.sh USER_NAME [COMMENT]`
 
-Example:
+### Example:
 
 `sudo ./user_creation.sh john_doe "John Doe Account"`
 
@@ -33,11 +33,11 @@ This script generates a random password with options for length, special charact
 - Append a special character to the password using -s.
 - Enable verbose mode using -v.
 
-Usage:
+### Usage:
 
 `./random_password_generator.sh [-vs] [-l LENGTH]`
 
-Example:
+### Example:
 
 `./random_password_generator.sh -l 16 -s -v`
 
@@ -51,11 +51,11 @@ This script disables, deletes, and/or archives user accounts. It requires superu
 - Delete user accounts with or without their home directory.
 - Archive user home directories before deletion.
 
-Usage:
+### Usage:
 
 `sudo ./delete_user.sh [-dra] USER [USERN...]`
 
-Options:
+### Options:
 
 ```
 -d : Delete the user account.
@@ -63,19 +63,19 @@ Options:
 -a : Archive the user's home directory.
 ```
 
-Example:
+### Example:
 
 `sudo ./delete_user.sh -dra john_doe`
 
-Prerequisites
+### Prerequisites
 
 - Linux operating system.
 - Superuser (root) privileges to execute the scripts.
 
-Notes
+### Notes
 
-Make sure the scripts are executable. Use the following command if needed:
+- Make sure the scripts are executable. Use the following command if needed:
 
 `chmod +x script_name.sh`
 
-The scripts are written for systems using bash. Ensure you have bash installed and set as your shell.
+- The scripts are written for systems using bash. Ensure you have bash installed and set as your shell.
