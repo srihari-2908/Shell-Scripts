@@ -2,13 +2,13 @@
 
 This repository contains three Bash scripts designed to facilitate user management on Linux systems. These scripts allow you to create users, generate random passwords, and delete or archive user accounts.
 
-Scripts Overview
+##Scripts Overview
 
-1. user_creation.sh
+##1. user_creation.sh
 
 This script creates a new user on the local system. It requires superuser privileges and generates a secure random password for the new user.
 
-Features:
+###Features:
 
 Creates a user with a username and optional comment.
 
@@ -26,11 +26,11 @@ Example:
 
 sudo ./user_creation.sh john_doe "John Doe Account"
 
-2. random_password_generator.sh
+##2. random_password_generator.sh
 
 This script generates a random password with options for length, special characters, and verbosity.
 
-Features:
+###Features:
 
 Specify password length using -l.
 
@@ -46,11 +46,11 @@ Example:
 
 ./random_password_generator.sh -l 16 -s -v
 
-3. delete_user.sh
+##3. delete_user.sh
 
 This script disables, deletes, and/or archives user accounts. It requires superuser privileges.
 
-Features:
+###Features:
 
 Disable user accounts.
 
