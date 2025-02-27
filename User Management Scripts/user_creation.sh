@@ -43,7 +43,10 @@ then
 fi
 
 # Set the password.
-echo ${PASSWORD} | passwd --stdin ${USER_NAME} &> /dev/null
+# Below command is for RHEL
+#echo ${PASSWORD} | passwd --stdin ${USER_NAME} &> /dev/null
+# Below command is for ubuntu
+echo "${USER_NAME}:${PASSWORD}" |  chpasswd &> /dev/null
 
 # Check to see if the passwd command succeeded.
 if [[ "${?}" -ne 0 ]]
